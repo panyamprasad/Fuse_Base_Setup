@@ -1,0 +1,19 @@
+<div class="flex flex-auto flex-col -m-6">
+    <div class="sm:min-w-90 p-6">
+        <h2 mat-dialog-title class="text-primary text-center">{{configData.title}}</h2>
+        <mat-dialog-content class="mat-typography">
+            <p class="text-center">
+                {{configData.bodyText}}
+            </p>
+        </mat-dialog-content>
+        <mat-dialog-actions align="end" class="justify-right">
+            <button class="px-8" mat-flat-button mat-dialog-close *ngIf="!hideCancelButton">{{cancelButtonText}}</button>
+            <button class="px-8 text-primary" mat-flat-button  type="button" [mat-dialog-close]="true"
+                cdkFocusInitial>
+                {{confirmButtonText}}
+            </button>
+            <!-- <button class="px-8" color="primary" mat-flat-button [mat-dialog-close]="true"
+                cdkFocusInitial>Delete</button> -->
+        </mat-dialog-actions>
+    </div>
+</div>

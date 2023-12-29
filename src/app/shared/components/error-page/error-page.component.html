@@ -1,0 +1,9 @@
+<div class="flex items-center justify-between w-full border-t px-8 py-4" *ngIf="errorMessage">
+    <!-- <div class="flex items-center">
+        
+    </div> -->
+    <div class="flex flex-auto flex-col items-center justify-center h-full">
+        <mat-icon class="icon-size-24" [svgIcon]="'iconsmind:warning_window'"></mat-icon>
+        <div class="mt-4 text-2xl font-semibold tracking-tight text-secondary">{{errorMessage}}</div>
+    </div>
+</div>

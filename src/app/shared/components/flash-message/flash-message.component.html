@@ -1,0 +1,12 @@
+<div class="flex items-center justify-between w-full border-t px-4 py-4" *ngIf="flashMessage">
+    <div class="flex items-center">
+        <div class="flex items-center mr-4">
+            <ng-container *ngIf="flashMessage === 'success'">
+                <ng-content select="[successMessage]"></ng-content>
+            </ng-container>
+            <ng-container *ngIf="flashMessage === 'error'">
+                <ng-content select="[errorMessage]"></ng-content>
+            </ng-container>
+        </div>
+    </div>
+</div>
