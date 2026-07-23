@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { FormControl } from "@angular/forms";
+import { UntypedFormControl } from "@angular/forms";
 import { FileValidators } from "ngx-file-drag-drop";
 
 @Component({
@@ -8,7 +8,7 @@ import { FileValidators } from "ngx-file-drag-drop";
 })
 export class FileUploadComponent implements OnInit {
 
-  fileControl = new FormControl(
+  fileControl = new UntypedFormControl(
     [],
     [FileValidators.required,
     FileValidators.maxFileCount(2)]
