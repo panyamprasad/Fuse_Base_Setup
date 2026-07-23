@@ -13,7 +13,7 @@ import { mockApiServices } from 'app/mock-api';
 import { LayoutModule } from 'app/layout/layout.module';
 import { AppComponent } from 'app/app.component';
 import { appRoutes } from 'app/app.routing';
-import { NgxPrintModule } from 'ngx-print';
+// import { NgxPrintModule } from 'ngx-print';
 import { CoreServicesModule } from './core/core-services/core-services.module';
 
 
@@ -26,7 +26,7 @@ const routerConfig: ExtraOptions = {
 @NgModule({
     declarations: [
         AppComponent,
-      
+
     ],
     imports: [
         BrowserModule,
@@ -49,7 +49,7 @@ const routerConfig: ExtraOptions = {
         // 3rd party modules that require global configuration via forRoot
         MarkdownModule.forRoot({}),
         CoreServicesModule,
-        NgxPrintModule
+        // NgxPrintModule
     ],
     bootstrap: [
         AppComponent
