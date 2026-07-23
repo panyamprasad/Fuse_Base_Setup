@@ -33,7 +33,6 @@ import { FormatFileSizePipe } from './pipes/shared-format-size.pipe';
         MatDialogModule,
         MatIconModule,
         NgxFileDragDropModule,
-        
     ],
     exports: [
         CommonModule,
@@ -47,9 +46,6 @@ import { FormatFileSizePipe } from './pipes/shared-format-size.pipe';
         AmountFormatterDirective,
         FileUploadComponent,
         EmailValidatorDirective
-    ],
-    entryComponents: [
-        EmailValidationErrorComponent
     ],
     providers: [
         DatePipe,
