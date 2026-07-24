@@ -46,3 +46,5 @@ Thumbs.db
 //      --> NgxPrintModule
 //---> Angular 14
 //      --> tailwind-config.scss file fix
+//---> Angular 15
+//      --> uninstall ngx-file-drag-drop
