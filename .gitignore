@@ -40,3 +40,9 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+
+//---> Angular 13
+//      --> NgxPrintModule
+//---> Angular 14
+//      --> tailwind-config.scss file fix

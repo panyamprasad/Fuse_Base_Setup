@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, NgForm, Validators } from '@angular/forms';
 import { finalize } from 'rxjs/operators';
 import { fuseAnimations } from '@fuse/animations';
 import { FuseValidators } from '@fuse/validators';
@@ -19,7 +19,7 @@ export class AuthResetPasswordComponent implements OnInit {
         type: 'primary',
         message: ''
     };
-    resetPasswordForm: FormGroup;
+    resetPasswordForm: UntypedFormGroup;
     showAlert: boolean = false;
 
     /**
@@ -27,7 +27,7 @@ export class AuthResetPasswordComponent implements OnInit {
      */
     constructor(
         private _authService: AuthService,
-        private _formBuilder: FormBuilder
+        private _formBuilder: UntypedFormBuilder
     ) {
     }
 
