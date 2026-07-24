@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { UntypedFormControl } from "@angular/forms";
-import { FileValidators } from "ngx-file-drag-drop";
+// import { FileValidators } from "ngx-file-drag-drop";
 
 @Component({
   selector: 'file-upload',
@@ -10,8 +10,8 @@ export class FileUploadComponent implements OnInit {
 
   fileControl = new UntypedFormControl(
     [],
-    [FileValidators.required,
-    FileValidators.maxFileCount(2)]
+    // [FileValidators.required,
+    // FileValidators.maxFileCount(2)]
   );
 
   @Output() fileUploadedChanged: EventEmitter<any> = new EventEmitter<any>();

@@ -1,7 +1,7 @@
 import { Directive, ElementRef, forwardRef, HostListener, Input, OnDestroy } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { formatNumber } from '@angular/common';
-import { MAT_INPUT_VALUE_ACCESSOR } from '@angular/material/input';
+import { MAT_LEGACY_INPUT_VALUE_ACCESSOR as MAT_INPUT_VALUE_ACCESSOR } from '@angular/material/legacy-input';
 
 @Directive({
   selector: 'input[amountFormatter]',
